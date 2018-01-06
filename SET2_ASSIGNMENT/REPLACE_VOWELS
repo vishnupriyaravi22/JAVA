@@ -1,0 +1,27 @@
+import java.util.*;
+public class Main
+{  
+    
+	public static void main(String[] args)
+	{
+		Scanner o = new Scanner(System.in);
+		String s = o.nextLine();
+		//System.out.println(s);
+	s=s.toLowerCase();
+		//System.out.println(lower);
+		 int len=s.length();
+		 
+		char c[]=s.toCharArray();
+	
+		for(int i=0;i<len;i++)
+		{
+		    if(c[i]=='a'||c[i]=='e'||c[i]=='i'||c[i]=='o'||c[i]=='u')
+		    {
+		        c[i]='z';
+		    }
+	
+		    System.out.print(c[i]);
+		}
+	}
+}
+
